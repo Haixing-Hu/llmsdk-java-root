@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~
+  ~    Copyright (c) 2022 - 2024.
+  ~    Haixing Hu, Qubit Co. Ltd.
+  ~
+  ~    All rights reserved.
+  ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>pom-root</artifactId>
+    <groupId>ltd.qubit</groupId>
+    <version>4.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>llmsdm-root</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>The Java SDK of LLM -- Root POM</name>
+  <url>${project.home.url}/${artifactId}</url>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <properties>
+        <environment>prod</environment>
+      </properties>
+    </profile>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <environment>dev</environment>
+      </properties>
+    </profile>
+  </profiles>
+
+  <properties>
+    <llmsdk.version>0.1.0</llmsdk.version>
+    <llmsdk-openai.version>0.1.0</llmsdk-openai.version>
+    <llmsdk-zhipu.version>0.1.0</llmsdk-zhipu.version>
+    <llmsdk-anthropic.version>0.1.0</llmsdk-anthropic.version>
+    <!-- default environment -->
+    <environment>dev</environment>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>ltd.qubit</groupId>
+        <artifactId>llmsdk-core</artifactId>
+        <version>${llmsdk.version}${build.suffix}</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>ltd.qubit</groupId>
+        <artifactId>llmsdk-openai</artifactId>
+        <version>${llmsdk-openai.version}${build.suffix}</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>ltd.qubit</groupId>
+        <artifactId>llmsdk-zhipu</artifactId>
+        <version>${llmsdk-zhipu.version}${build.suffix}</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>ltd.qubit</groupId>
+        <artifactId>llmsdk-anthropic</artifactId>
+        <version>${llmsdk-anthropic.version}${build.suffix}</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
