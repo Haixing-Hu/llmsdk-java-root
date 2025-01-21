@@ -16,7 +16,7 @@
     <version>4.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>llmsdm-root</artifactId>
+  <artifactId>llmsdk-root</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>The Java SDK of LLM -- Root POM</name>
