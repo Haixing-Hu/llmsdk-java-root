@@ -38,10 +38,10 @@
   </profiles>
 
   <properties>
-    <llmsdk.version>0.1.0</llmsdk.version>
-    <llmsdk-openai.version>0.1.0</llmsdk-openai.version>
-    <llmsdk-zhipu.version>0.1.0</llmsdk-zhipu.version>
-    <llmsdk-anthropic.version>0.1.0</llmsdk-anthropic.version>
+    <llmsdk.version>0.2.0</llmsdk.version>
+    <llmsdk-openai.version>0.2.0</llmsdk-openai.version>
+    <llmsdk-zhipu.version>0.2.0</llmsdk-zhipu.version>
+    <llmsdk-anthropic.version>0.2.0</llmsdk-anthropic.version>
     <!-- default environment -->
     <environment>dev</environment>
   </properties>
