@@ -51,7 +51,7 @@
       <dependency>
         <groupId>ltd.qubit</groupId>
         <artifactId>llmsdk-core</artifactId>
-        <version>${llmsdk.version}${build.suffix}</version>
+        <version>${llmsdk-core.version}${build.suffix}</version>
         <type>jar</type>
         <scope>compile</scope>
       </dependency>
