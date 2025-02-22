@@ -38,7 +38,7 @@
   </profiles>
 
   <properties>
-    <llmsdk.version>0.6.0</llmsdk.version>
+    <llmsdk-core.version>0.7.0</llmsdk-core.version>
     <llmsdk-openai.version>0.3.0</llmsdk-openai.version>
     <llmsdk-zhipu.version>0.2.1</llmsdk-zhipu.version>
     <llmsdk-anthropic.version>0.2.0</llmsdk-anthropic.version>
